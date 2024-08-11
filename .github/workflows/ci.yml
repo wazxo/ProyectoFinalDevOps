@@ -19,12 +19,12 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Puedes especificar la versión de Node.js que necesites
+          node-version: '18'  # Actualiza a una versión de Node.js compatible
 
       - name: Install dependencies
         run: npm install
 
       - name: Run tests
-        run: npm test
+        run: npx jest  # Usa npx para ejecutar Jest
         env:
-          CI: true  # Establece el modo de integración continua para Jest
+          CI: true
