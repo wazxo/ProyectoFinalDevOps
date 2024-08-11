@@ -19,15 +19,12 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Especifica la versión de Node.js
+          node-version: '16'  # Puedes especificar la versión de Node.js que necesites
 
       - name: Install dependencies
         run: npm install
 
-      - name: Fix permissions for Jest
-        run: chmod +x ./node_modules/.bin/jest
-
       - name: Run tests
         run: npm test
         env:
-          CI: true  # Habilita el modo de integración continua para `jest`
+          CI: true  # Establece el modo de integración continua para Jest
