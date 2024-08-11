@@ -1,0 +1,20 @@
+{
+  "name": "proyectofinal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Johelin P. Perez Valdez",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "^24.1.1"
+  },
+  "dependencies": {
+    "text-encoding": "^0.7.0",
+    "typed.js": "^2.1.0"
+  }
+}
